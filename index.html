@@ -16,13 +16,14 @@
           e.preventDefault();
 
           $.ajax({
-            type: 'post',
-            url: 'action.php',
-            data: $('form').serialize(),
-            success: function () {
-             alert('form was submitted');
-            }
-          });
+    url: "/action.php", 
+    data: {value: 1},
+    type: 'post',
+    error: function(XMLHttpRequest, textStatus, errorThrown){
+        alert('status:' + XMLHttpRequest.status + ', status text: ' + XMLHttpRequest.statusText);
+    },
+    success: function(data){}
+});
 
         });
 
